@@ -21,7 +21,7 @@ try:
 except:
   if input(f"Filename auto? ({youtube.title}.mp4) [Y/n] ") in ["y", "Y", ""]:
     print("Yes")
-    filename = youtube.title
+    filename = f"{youtube.title}.mp4"
   else:
     filename = input("Enter filename: ")
     if not ".mp4" in filename:
